@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宝哥博客</title>
+    <title>blogs</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f59e0b'/><text x='50' y='68' text-anchor='middle' font-size='50' fill='white' font-weight='bold'>B</text></svg>">
     <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
@@ -171,7 +171,7 @@
                 if (!res.ok) throw new Error();
                 const data = await res.json();
                 
-                const title = data.site_title || "宝哥博客";
+                const title = data.site_title || "blogs";
                 const subtitle = data.site_subtitle || "无服务器数字花园";
                 activeCategories = JSON.parse(data.site_categories || '["技术","教程","随笔","思考"]');
                 activeSeriesList = JSON.parse(data.site_series || '["科学上网","谷歌系列","NAS系列"]');
