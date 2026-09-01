@@ -171,7 +171,7 @@
                 if (!res.ok) throw new Error();
                 const data = await res.json();
                 
-                const title = data.site_title || "Blogs.nyc.mn";
+                const title = data.site_title || "宝哥博客";
                 const subtitle = data.site_subtitle || "无服务器数字花园";
                 activeCategories = JSON.parse(data.site_categories || '["技术","教程","随笔","思考"]');
                 activeSeriesList = JSON.parse(data.site_series || '["科学上网","谷歌系列","NAS系列"]');
